@@ -1,0 +1,31 @@
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 100%;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.produtos{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 250px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+.produtos img{
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.produtos span{
+  font-weight: bold;
+}
