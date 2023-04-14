@@ -1,3 +1,29 @@
+.btn{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+}
+
+.btn button{
+  width: 120px;
+  padding: 5px;
+  border: none;
+  background-color: green;
+  color: #fff;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.btn button:hover{
+  opacity: .8;
+}
+
 .container{
   display: flex;
   flex-wrap: wrap;

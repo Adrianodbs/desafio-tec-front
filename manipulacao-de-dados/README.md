@@ -7,4 +7,5 @@ b) Escreva uma função que receba uma lista de objetos com propriedades "name" 
 - Depois criamos um useEffect, e dentro desse useEffect colocamos uma função assíncrona, já que estamos utilizando dados externos e o carregamento pode demorar um tempo. Dentro dessa função assíncrona utilizamos o método fetch para buscar a nossa API, e no link da nossa API acrescentamos "limit=15" no fim, para limitar para apenas 15 itens. Poderiamos ter usado o Axios também, mas ambos funcionam perfeitamente para buscar esses dados.
 - Após criar a nossa função, nós a invocamos no fim do nosso useEffect, e deixamos o array de dependências vazio, para o useEffect sempre ser invocado quando recarregamos a página.
 - No nosso return, ao criar o nosso código jsx, nós executamos um map no nosso state "produto", para resgatar todos os 15 produtos dentro da nossa state.
-- Depois criamos uma div, passamos a key para essa div utilizando o ID, e invocamos a imagem, o título e o preço
+- Depois criamos uma div, passamos a key para essa div utilizando o ID, e invocamos a imagem, o título e o preço.
+- Após a invocação de todos os produtos, foi realizado a estilização deles.
