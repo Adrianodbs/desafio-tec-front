@@ -1,18 +1,24 @@
 import { useEffect, useState } from 'react'
 import './style.css'
+import apiData from './service/api'
 
 function App() {
   const [produto, setProduto] = useState([])
-  const [filtro, setFiltro] = useState('todos')
+  const [filtro, setFiltro] = useState([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     async function api() {
-      await fetch('https://fakestoreapi.com/products?limit=15')
-        .then(res => res.json())
-        .then(json => {
-          setProduto(json)
-          setFiltro(json)
-        })
+      try {
+        setLoading(true)
+        const response = await apiData.get()
+
+        setProduto(response.data)
+        setFiltro(response.data)
+        setLoading(false)
+      } catch (error) {
+        console.error(error)
+      }
     }
 
     api()
@@ -49,6 +55,7 @@ function App() {
         <button onClick={handlePriceAbove100}>Acima de R$100</button>
       </div>
       <div className="container">
+        {loading && <p>Carregando...</p>}
         {filtro.map(item => (
           <div key={item.id} className="produtos">
             <img src={item.image} alt={item.title} />
