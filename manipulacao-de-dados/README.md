@@ -1,6 +1,5 @@
 2 - Manipulação de dados:
 a) Crie um componente React que exiba uma lista de itens de uma API e permita que o usuário filtre os itens por um critério específico (por exemplo, categoria ou preço).
-b) Escreva uma função que receba uma lista de objetos com propriedades "name" e "age" e retorne uma nova lista de objetos com propriedades "name" e "isAdult" (true ou false dependendo se a idade é maior ou igual a 18).
 
 - O primeiro passo para a nossa aplicação foi buscar uma API diretamente do site "https://fakestoreapi.com/".
 - O segundo passo foi criar um state chamado "produto" utilizando o useState do React, onde iremos armazenar todos os dados da nossa API.
