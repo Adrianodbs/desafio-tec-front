@@ -1,0 +1,28 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+
+.colorSquare{
+  margin-top: 20px;
+}
+
+.colorSquare button{
+  width: 200px;
+  height: 42px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #000;
+  color: #fff;
+}
