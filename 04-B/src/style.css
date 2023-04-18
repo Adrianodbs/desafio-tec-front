@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app{
+  width: 90%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.form input{
+  height: 32px;
+  padding-left: 10px;
+}
+
+.form button {
+  height: 32px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+}
