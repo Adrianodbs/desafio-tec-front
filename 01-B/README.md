@@ -1,11 +1,9 @@
 Função para somar os números pares.
 
-- O primeiro passo foi criar uma função chamada somarNumerosPares e para essa função colocamos "numeros" como parâmetro, que no caso seria a lista de números passada posteriormente.
+- O primeiro passo foi criar uma função 'somarNumerosPares', que recebe como parâmetro um array de números (numeros).
 - Depois foi criada uma let chamada "valor" e foi atribuído o valor 0 para ela.
-- Na sequência foi realizado um loop for com intuito de percorrer a nossa lista de números "for (let i = 0; i < numeros.length; i++)", onde o primeiro parâmetro seria responsável por estabelecer o valor de i como zero, o segundo parâmetro foi responsável por estabelecer até onde esse loop iria, sendo assim, foi utilizado o tamanho da nossa lista como parâmetro, ou seja, se nossa lista tivesse 8 números, esse loop iria percorrer até esse oitavo número. E como terceiro parâmetro foi colocado o "i++" para incremetar um número por vez até alcançar o valor total do length.
-- Feito isso, seria necessário realizar uma verificação para selecionar os números pares, isso foi feito através de if: "if (numeros[i] % 2 === 0)", ou seja, todo número que ao ser dividido por dois, não deixasse sobras, seria considerado como um número par.
-  -Para realizar a soma, utilizamos "valor += numeros[i]", ou seja, nossa let "valor" que começou como 0, iria receber a soma de todos os números pares, pois na verificação anterior selecionamos todos os números pares através do if, e todos os números que não passaram por essa verificação, foram desconsiderados.
-- No fim, retornamos a nossa let "valor", com o seu valor atualizado.
-- Após a função, criamos o nosso array de números chamado "lista", tanto com números pares quanto ímpares.
-- Depois criamos uma const chamada resultadoFinal, e como valor, passamos a nossa função recebendo a "lista" como parâmetro, ou seja, a "lista" atua aqui como o parâmetro "numeros" passado anteriormente para a nossa função.
-- Por fim, exibimos o resultado através de "console.log(resultadoFinal)"
+- Na sequência foi utilizado o método forEach para iterar sobre o array numeros. O método forEach executa uma função para cada elemento do array.
+- A função passada como parâmetro para o método forEach é uma arrow function que recebe um parâmetro 'numero'. Essa função verifica se o número é par usando a expressão 'numero % 2 === 0'. Se o número for par, a linha 'valor += numero' é executada, somando o número à variável 'valor'.
+- Após a iteração sobre todos os elementos do array 'numeros', a função retorna o valor da variável 'valor'.
+- Depois foi criado um array chamado 'lista' contendo os números de 1 a 12.
+- Depois foi chamada a função 'somarNumerosPares' passando o array lista como parâmetro, e posteriormente esse resultado foi exibido em um console.log
